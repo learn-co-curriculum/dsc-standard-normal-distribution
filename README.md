@@ -1,15 +1,18 @@
 
 # Standard Normal Distribution
 
+## Introduction
 In this lesson, we will introduce a special case of normal distributions called "The Standard Normal Distribution".
 
 ## Objectives
-Students would be able to :
+
+You will be able to:
+
 * Compare and contrast the normal and the standard normal distribution
-* Calculate the z-score(standard score) for an observation from normally distributed data
+* Calculate the z-score (standard score) for an observation from normally distributed data
 * Understand the process for standardizing data by converting it to the standard normal distribution
 
-### Introduction
+## What is a standard normal distribution?
 
 Previously, we talked about normal (or gaussian) distribution characterized by a bell shape curve. We also identified the mean and standard deviation to be the defining parameters of a normal distribution. As discussed, normal distributions do not necessarily have the same means and standard deviations. 
 
@@ -62,7 +65,7 @@ For above exmaple, this would work out as:
 
 So you see , as we mentioned initially, a standard normal distribution can be a powerful way to analyze observations in terms of their distance from mean and can also identify actual value of an observation - all based on z-score and standard normal distributions. 
 
-### Data Standardization
+## Data Standardization
 
 Data standardization is common data preprocessing skill, which is used to compare a number of observations which may belong to different normal distributions having distinct means and standard deviations. This involves calculating the z score as shown above, to every element of a random continuous variable under a normal distribution. The output of this process would thus become something known as a **z-Distribution** or a **standard normal distribution**. 
 <img src="ns1.jpg" width=500>
@@ -101,7 +104,7 @@ sns.distplot([(x - d2.mean())/d2.std() for x in d2]);
 
 Here we can see that both distributions are directly comparable on a common standard scale. As mentioned earlier, this trick will come in handy with analytics experiments while training machine learning algorithms. 
 
-### Level up (Optional) 
+## Level up (Optional) 
 
 Try converting these standard distributions back to the original normal distributions using the formula given above. Visualize to see if they resemble our original distributions. 
 
