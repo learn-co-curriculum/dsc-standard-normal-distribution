@@ -40,6 +40,7 @@ Any normal distribution can be converted to a standard normal and vice versa usi
 equations. The standard normal distribution is used to calculate standard score.
 
 Normal distributions can be transformed to standard normal distributions by the formula:
+
 <img src="zform.gif" width = 200>
 
 > Here x is an observation from the original normal distribution, μ is the mean and σ is the standard deviation of original normal distribution. 
@@ -68,6 +69,7 @@ So you see , as we mentioned initially, a standard normal distribution can be a 
 ## Data Standardization
 
 Data standardization is common data preprocessing skill, which is used to compare a number of observations which may belong to different normal distributions having distinct means and standard deviations. This involves calculating the z score as shown above, to every element of a random continuous variable under a normal distribution. The output of this process would thus become something known as a **z-Distribution** or a **standard normal distribution**. 
+
 <img src="ns1.jpg" width=500>
 
 Let's see a quick example how we can do this. First we'll randomly generate 1000 observations each, for two normal distributions with different means and sd. We shall use seaborn for this to allow us with some quick plotting. 
