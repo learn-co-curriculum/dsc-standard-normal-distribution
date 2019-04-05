@@ -14,7 +14,7 @@ You will be able to:
 
 ## What is a Standard Normal Distribution?
 
-Previously, you learned about the normal (or gaussian) distribution, which is characterized by a bell shape curve. We also identified the mean and standard deviation as the defining parameters of this distribution. As mentioned before, normal distributions do not necessarily have the same means and standard deviations. 
+Previously, you learned about the normal (or Gaussian) distribution, which is characterized by a bell shape curve. We also identified the mean and standard deviation as the defining parameters of this distribution. As mentioned before, normal distributions do not necessarily have the same means and standard deviations. 
 
 The standard normal distribution, however, is a **special case** of the normal distribution. The Standard Normal Distribution is a normal distribution with a mean of 0, and a standard deviation of 1. 
 
@@ -26,8 +26,8 @@ Plotting a continuous cumulative distribution function for the standard normal d
 Thinking back to the standard deviation rule for normal distributions:
 
 * $68\%$ of the area lies in the interval of 1 standard deviation from the mean, or mathematically speaking, $68\%$ is in the interval  $[\mu-\sigma, \mu+\sigma]$
-*  $95\%$ of the area lies in the interval of 2 standard deviation from the mean, or mathematically speaking, $95\%$ is in the interval  $[(\mu-2\sigma), (\mu+2\sigma)]$
-* $99\%$ of the area lies in the interval of 2 standard deviation from the mean, or mathematically speaking, $99\%$ is in the interval  $[(\mu-3\sigma), (\mu+3\sigma)]$
+*  $95\%$ of the area lies in the interval of 2 standard deviations from the mean, or mathematically speaking, $95\%$ is in the interval  $[(\mu-2\sigma), (\mu+2\sigma)]$
+* $99\%$ of the area lies in the interval of 3 standard deviations from the mean, or mathematically speaking, $99\%$ is in the interval  $[(\mu-3\sigma), (\mu+3\sigma)]$
 
 
 With a $\mu = 0$ and $\sigma=1$, this means that for the standard normal distribution:
@@ -42,14 +42,14 @@ This simplicity makes a standard normal distribution very desirable to work with
 
 The standard score (more commonly referred to as a z-score) is a very useful statistic because it allows us to:
 1. Calculate the probability of a certain score occurring within a given normal distribution and 
-2. Compare between two scores that are from different normal distributions.
+2. Compare two scores that are from different normal distributions.
 
 Any normal distribution can be converted to a standard normal distribution and vice versa using this
 equation:
 
 $$\Large z=\dfrac{x-\mu}{\sigma}$$
 
-Here, $x$ is an observation from the original normal distribution, $\mu$ is the mean and $\sigma$ is the standard deviation of original normal distribution. 
+Here, $x$ is an observation from the original normal distribution, $\mu$ is the mean and $\sigma$ is the standard deviation of the original normal distribution. 
 
 
 The standard normal distribution is sometimes called the $z$ distribution. A $z$ score always reflects the number of standard deviations above or below the mean. 
@@ -58,7 +58,6 @@ The standard normal distribution is sometimes called the $z$ distribution. A $z$
 
 Imagine test results following a normal distribution with a mean of 50 and a standard deviation of 10.
 One of the students scored a 70 on the test. Using this information into z-scores makes it easy to tell how she performed in terms of standard deviations from the mean:
-
 
 
 Imagine a person scored a 70 on a test, with results distribution having a mean of 50 and a standard deviation of 10, then they scored 2 standard deviations above the mean. Converting the test scores to z scores, an X of 70 would be:
@@ -73,7 +72,7 @@ In summary, calculating the z-score gives us quick and easy access to understand
 
 Visually, the idea is that the area under the curve left and right from the vertical red line are identical in the left plot and the right plot!
 
-Thinking on these lines, you can also convert a $z$-score back to a original score $X$ by using same formula as:
+Thinking on these lines, you can also convert a $z$-score back to an original score $X$ by using the same formula as:
 
 $$\large X=\mu + z\sigma$$
 
