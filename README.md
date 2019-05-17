@@ -18,7 +18,7 @@ Previously, you learned about the normal (or Gaussian) distribution, which is ch
 
 The standard normal distribution, however, is a **special case** of the normal distribution. The Standard Normal Distribution is a normal distribution with a mean of 0, and a standard deviation of 1. 
 
-<img src = "images/snorm2.png" width = "550">
+<img src = "images/snorm.png" width = "650">
 
 Plotting a continuous cumulative distribution function for the standard normal distribution, the CDF would look like this:
 <img src = "images/cdf_stnormal.png" width ="450">
@@ -86,7 +86,7 @@ $X = 50 + 2*10 = 70 $
 Data standardization is common data preprocessing skill, which is used to compare a number of observations belonging to different normal distributions, and having distinct means and standard deviations. 
 
 Standardization applying a $z$ score calculation as shown above, on each element of the distribution. The output of this process is a **z-distribution** or a **standard normal distribution**. 
-<img src="images/ns1.jpg" width=500>
+<img src="images/flow.png" width=600>
 
 Let's look at a quick example. First, we'll randomly generate two normal distributions with different means and standard deviations. Let's generate 1000 observations for each. Next, we'll use Seaborn to plot the results.
 
