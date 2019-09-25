@@ -16,7 +16,7 @@ You will be able to:
 
 Previously, you learned about the normal (or Gaussian) distribution, which is characterized by a bell shape curve. We also identified the mean and standard deviation as the defining parameters of this distribution. As mentioned before, normal distributions do not necessarily have the same means and standard deviations. 
 
-The standard normal distribution, however, is a **special case** of the normal distribution. The Standard Normal Distribution is a normal distribution with a mean of 0, and a standard deviation of 1. 
+The standard normal distribution, however, is a **special case** of the normal distribution. The Standard Normal Distribution is a normal distribution with a mean of 0 and a standard deviation of 1. 
 
 <img src = "images/snorm.png" width = "650">
 
@@ -52,40 +52,41 @@ $$\Large z=\dfrac{x-\mu}{\sigma}$$
 Here, $x$ is an observation from the original normal distribution, $\mu$ is the mean and $\sigma$ is the standard deviation of the original normal distribution. 
 
 
-The standard normal distribution is sometimes called the $z$ distribution. A $z$ score always reflects the number of standard deviations above or below the mean. 
+The standard normal distribution is sometimes called the $z$-distribution. A $z$-score always reflects the number of standard deviations above or below the mean. 
 
 ### An example 
 
 Imagine test results following a normal distribution with a mean of 50 and a standard deviation of 10.
-One of the students scored a 70 on the test. Using this information into z-scores makes it easy to tell how she performed in terms of standard deviations from the mean:
+One of the students scored a 70 on the test. Using this information and z-scores makes it easy to tell how she performed in terms of standard deviations from the mean:
 
 
-Imagine a person scored a 70 on a test, with results distribution having a mean of 50 and a standard deviation of 10, then they scored 2 standard deviations above the mean. Converting the test scores to z scores, an X of 70 would be:
+Imagine a person scored a 70 on a test, with results distribution having a mean of 50 and a standard deviation of 10, then they scored 2 standard deviations above the mean. Converting the test scores to $z$-scores, an X of 70 would be:
 
 $z = \dfrac{70 - 50}{10}  = 2$
 
-By having transformed our test result of 70 to the z-score of 2, we now know that the student's original score was 2 standard deviations above the mean. Note that the $z$ distribution will only be a normal distribution if the original distribution of x was normal.
-In summary, calculating the z-score gives us quick and easy access to understanding how **extreme** a certain result is. Looking at the original distribution ($\mu =50$, $\sigma=10$) and the standard normal distribution ($\mu =0$, $\sigma=1$) while highlighting $x=70$ and $z=2$ gives the following result: 
+By having transformed our test result of 70 to the $z$-score of 2, we now know that the student's original score was 2 standard deviations above the mean. Note that the $z$ distribution will only be a normal distribution if the original distribution of $x$ was normal.
+
+In summary, calculating the $z$-score gives us quick and easy access to understanding how **extreme** a certain result is. Looking at the original distribution ($\mu =50$, $\sigma=10$) and the standard normal distribution ($\mu =0$, $\sigma=1$) while highlighting $x=70$ and $z=2$ gives the following result: 
 
 
 <img src = "images/test_std_normal.png" width ="950">
 
-Visually, the idea is that the area under the curve left and right from the vertical red line are identical in the left plot and the right plot!
+Visually, the idea is that the area under the curve, left and right from the vertical red line, are identical in the left plot and the right plot!
 
-Thinking on these lines, you can also convert a $z$-score back to an original score $X$ by using the same formula as:
+Thinking along these lines, you can also convert a $z$-score back to an original score $X$ by using the same formula as:
 
 $$\large X=\mu + z\sigma$$
 
 
-For above exmaple, this would work out as:
+For the above example, this would work out as:
 
 $X = 50 + 2*10 = 70 $
 
 ## Data Standardization
 
-Data standardization is common data preprocessing skill, which is used to compare a number of observations belonging to different normal distributions, and having distinct means and standard deviations. 
+Data standardization is a common data preprocessing skill, which is used to compare a number of observations belonging to different normal distributions which may have distinct means and standard deviations. 
 
-Standardization applying a $z$ score calculation as shown above, on each element of the distribution. The output of this process is a **z-distribution** or a **standard normal distribution**. 
+Standardization applies a $z$-score calculation, as shown above, on each element of the distribution. The output of this process is a **z-distribution** or a **standard normal distribution**. 
 <img src="images/flow.png" width=600>
 
 Let's look at a quick example. First, we'll randomly generate two normal distributions with different means and standard deviations. Let's generate 1000 observations for each. Next, we'll use Seaborn to plot the results.
@@ -108,7 +109,7 @@ sns.distplot(d2);
 
 You can see that these distributions differ from each other and are not directly comparable.
 
-For a number of machine learning algorithms and data visualization techniques, it is important that the effect of scale of data is removed before you start thinking about building your model. Standardization allows for this by converting the distributions into a z-distribution,bringing them to a common scale (with $\mu = 0$, $\sigma = 1$. Let's standardize above distributions and look at the effect. 
+For a number of machine learning algorithms and data visualization techniques, it is important that the effect of the scale of the data is removed before you start thinking about building your model. Standardization allows for this by converting the distributions into a $z$-distribution, bringing them to a common scale (with $\mu = 0$, $\sigma = 1$. Let's standardize the above distributions and look at the effect. 
 
 
 ```python
@@ -130,5 +131,5 @@ Convert standard distributions back to the original normal distributions using t
 
 ## Summary
 
-In this lesson you learned about a special case of the normal distribution called the standard normal distribution.
-You also learned how to convert any normal distribution to a standard normal distribution using the z-score. You'll continue working on this in the following labs. 
+In this lesson, you learned about a special case of the normal distribution called the standard normal distribution.
+You also learned how to convert any normal distribution to a standard normal distribution using the $z$-score. You'll continue working on this in the following labs. 
