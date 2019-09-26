@@ -9,7 +9,7 @@ In this lesson, we will introduce a special case of normal distributions: "The S
 You will be able to:
 
 * Compare and contrast the normal and the standard normal distribution
-* Calculate the z-score (standard score) for an observation from normally distributed data
+* Calculate the $z$-score (standard score) for an observation from normally distributed data
 * Understand the process for standardizing data by converting it to the standard normal distribution
 
 ## What is a Standard Normal Distribution?
@@ -40,7 +40,7 @@ This simplicity makes a standard normal distribution very desirable to work with
 
 ## Standard Score (z-score)
 
-The standard score (more commonly referred to as a z-score) is a very useful statistic because it allows us to:
+The standard score (more commonly referred to as a $z$-score) is a very useful statistic because it allows us to:
 1. Calculate the probability of a certain score occurring within a given normal distribution and 
 2. Compare two scores that are from different normal distributions.
 
@@ -57,7 +57,7 @@ The standard normal distribution is sometimes called the $z$-distribution. A $z$
 ### An example 
 
 Imagine test results following a normal distribution with a mean of 50 and a standard deviation of 10.
-One of the students scored a 70 on the test. Using this information and z-scores makes it easy to tell how she performed in terms of standard deviations from the mean:
+One of the students scored a 70 on the test. Using this information and $z$-scores makes it easy to tell how she performed in terms of standard deviations from the mean:
 
 
 Imagine a person scored a 70 on a test, with results distribution having a mean of 50 and a standard deviation of 10, then they scored 2 standard deviations above the mean. Converting the test scores to $z$-scores, an X of 70 would be:
