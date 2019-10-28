@@ -8,9 +8,9 @@ In this lesson, we will introduce a special case of normal distributions: "The S
 
 You will be able to:
 
-* Compare and contrast the normal and the standard normal distribution
-* Calculate the $z$-score (standard score) for an observation from normally distributed data
-* Understand the process for standardizing data by converting it to the standard normal distribution
+* Compare and contrast the normal and standard normal distribution
+* Calculate and interpret the z-score (standard score) for an observation from normally distributed data
+* Convert between a normal and a standard normal distribution
 
 ## What is a Standard Normal Distribution?
 
@@ -56,15 +56,12 @@ The standard normal distribution is sometimes called the $z$-distribution. A $z$
 
 ### An example 
 
-Imagine test results following a normal distribution with a mean of 50 and a standard deviation of 10.
-One of the students scored a 70 on the test. Using this information and $z$-scores makes it easy to tell how she performed in terms of standard deviations from the mean:
-
-
-Imagine a person scored a 70 on a test, with results distribution having a mean of 50 and a standard deviation of 10, then they scored 2 standard deviations above the mean. Converting the test scores to $z$-scores, an X of 70 would be:
+Imagine some test results follow a normal distribution with a mean score of 50 and a standard deviation of 10.
+One of the students scored a 70 on the test. Using this information and $z$-scores makes it easy to tell how she performed in terms of standard deviations from the mean. Converting a test score of 70 to a $z$-score, an $x$ of 70 would be, in this case: 
 
 $z = \dfrac{70 - 50}{10}  = 2$
 
-By having transformed our test result of 70 to the $z$-score of 2, we now know that the student's original score was 2 standard deviations above the mean. Note that the $z$ distribution will only be a normal distribution if the original distribution of $x$ was normal.
+By transforming the test result of 70 to a $z$-score of 2, we now know that the student's original score was 2 standard deviations above the mean score. Note that the $z$ distribution will only be a normal distribution if the original distribution of $x$ was normal.
 
 In summary, calculating the $z$-score gives us quick and easy access to understanding how **extreme** a certain result is. Looking at the original distribution ($\mu =50$, $\sigma=10$) and the standard normal distribution ($\mu =0$, $\sigma=1$) while highlighting $x=70$ and $z=2$ gives the following result: 
 
@@ -73,14 +70,13 @@ In summary, calculating the $z$-score gives us quick and easy access to understa
 
 Visually, the idea is that the area under the curve, left and right from the vertical red line, are identical in the left plot and the right plot!
 
-Thinking along these lines, you can also convert a $z$-score back to an original score $X$ by using the same formula as:
+Thinking along these lines, you can also convert a $z$-score back to an original score $x$ by using the same formula as:
 
-$$\large X=\mu + z\sigma$$
-
+$$\large x=\mu + z\sigma$$
 
 For the above example, this would work out as:
 
-$X = 50 + 2*10 = 70 $
+$x = 50 + 2*10 = 70 $
 
 ## Data Standardization
 
@@ -89,7 +85,7 @@ Data standardization is a common data preprocessing skill, which is used to comp
 Standardization applies a $z$-score calculation, as shown above, on each element of the distribution. The output of this process is a **z-distribution** or a **standard normal distribution**. 
 <img src="images/flow.png" width=600>
 
-Let's look at a quick example. First, we'll randomly generate two normal distributions with different means and standard deviations. Let's generate 1000 observations for each. Next, we'll use Seaborn to plot the results.
+Let's look at a quick example. First, we'll randomly generate two normal distributions with different means and standard deviations. Let's generate 1000 observations for each. Next, we'll use `seaborn` to plot the results.
 
 
 ```python
@@ -109,7 +105,7 @@ sns.distplot(d2);
 
 You can see that these distributions differ from each other and are not directly comparable.
 
-For a number of machine learning algorithms and data visualization techniques, it is important that the effect of the scale of the data is removed before you start thinking about building your model. Standardization allows for this by converting the distributions into a $z$-distribution, bringing them to a common scale (with $\mu = 0$, $\sigma = 1$. Let's standardize the above distributions and look at the effect. 
+For a number of machine learning algorithms and data visualization techniques, it is important that the effect of the scale of the data is removed before you start thinking about building your model. Standardization allows for this by converting the distributions into a $z$-distribution, bringing them to a common scale (with $\mu = 0$, $\sigma = 1$). Let's standardize the above distributions and look at the effect. 
 
 
 ```python
