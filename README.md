@@ -84,7 +84,7 @@ Data standardization is a common data preprocessing skill, which is used to comp
 Standardization applies a $z$-score calculation, as shown above, on each element of the distribution. The output of this process is a **z-distribution** or a **standard normal distribution**. 
 <img src="images/flow.png" width=600>
 
-Let's look at a quick example. First, we'll randomly generate two normal distributions with different means and standard deviations. Let's generate 1000 observations for each. Next, we'll use `seaborn` to plot the results.
+Let's look at a quick example. First, we'll randomly generate two normal distributions with different means and standard deviations. Let's generate 1000 observations for each. Next, we'll use `seaborn` to plot the results, where the output may look different than this based on your machine.
 
 
 ```python
