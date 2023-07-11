@@ -1,4 +1,3 @@
-
 # The Standard Normal Distribution
 
 ## Introduction
@@ -95,12 +94,14 @@ mean1, sd1 = 5, 3 # dist 1
 mean2, sd2 = 10, 2 # dist 2 
 d1 = np.random.normal(mean1, sd1, 1000)
 d2 = np.random.normal(mean2, sd2, 1000)
-sns.distplot(d1);
-sns.distplot(d2);
+sns.displot(d1);
+sns.displot(d2);
 ```
 
 
+    
 ![png](index_files/index_1_0.png)
+    
 
 
 You can see that these distributions differ from each other and are not directly comparable.
@@ -111,12 +112,14 @@ For a number of machine learning algorithms and data visualization techniques, i
 ```python
 # Stardardizing and visualizing distributions
 
-sns.distplot([(x - d1.mean())/d1.std() for x in d1]);
-sns.distplot([(x - d2.mean())/d2.std() for x in d2]);
+sns.displot([(x - d1.mean())/d1.std() for x in d1]);
+sns.displot([(x - d2.mean())/d2.std() for x in d2]);
 ```
 
 
+    
 ![png](index_files/index_3_0.png)
+    
 
 
 You see that both distributions are directly comparable on a common standard scale. As mentioned earlier, this trick will come in handy with analytics experiments while training machine learning algorithms. 
