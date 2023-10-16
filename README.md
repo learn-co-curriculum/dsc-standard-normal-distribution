@@ -94,8 +94,8 @@ mean1, sd1 = 5, 3 # dist 1
 mean2, sd2 = 10, 2 # dist 2 
 d1 = np.random.normal(mean1, sd1, 1000)
 d2 = np.random.normal(mean2, sd2, 1000)
-sns.displot(d1);
-sns.displot(d2);
+sns.(d1);
+sns.(d2);
 ```
 
 
@@ -112,8 +112,8 @@ For a number of machine learning algorithms and data visualization techniques, i
 ```python
 # Stardardizing and visualizing distributions
 
-sns.displot([(x - d1.mean())/d1.std() for x in d1]);
-sns.displot([(x - d2.mean())/d2.std() for x in d2]);
+sns.([(x - d1.mean())/d1.std() for x in d1]);
+sns.([(x - d2.mean())/d2.std() for x in d2]);
 ```
 
 
